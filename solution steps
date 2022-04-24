@@ -1,0 +1,6 @@
+First I extracted the training folder from the tar file, under that 2 subfolders were displayed both positive and negative.
+From the positive folder which contained all the disease articles, i extracted the paragraph of each file/article and preproceed the text as my train set. For the target variable i have set my as 'Disease'.
+Similarly I did the same for the neagtive folder and set my target variable as 'No Disease'.
+I have combined those 2 dataframes, and then split my final data frame as train and test.
+With the help of Grid serach and 4 fold cross validation, I trained my SVM model on the train set and predicted the same on my test dataset.
+With this approach I am able to recieve accuracy of 99%( displayed the entire classification report) and my model is able to predict with an accuracy of 99% whether an article provided is of disease or no disease.
